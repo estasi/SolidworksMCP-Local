@@ -8,16 +8,18 @@ jobs:
   queue:
     runs-on: windows-latest
     timeout-minutes: 15
-    # Synthetic deployment fixtures require canonical paths. Hosted Windows TEMP
-    # may use an 8.3 user-profile alias that the strict deployment guard rejects.
-    env:
-      TEMP: ${{ runner.temp }}
-      TMP: ${{ runner.temp }}
     strategy:
       fail-fast: false
       matrix:
         python: ['3.11', '3.14']
     steps:
+      # Hosted Windows TEMP can use an 8.3 alias. Keep synthetic fixtures on the
+      # canonical runner path without weakening the deployment path checks.
+      - name: Use canonical temporary paths for tests
+        shell: pwsh
+        run: |
+          "TEMP=$env:RUNNER_TEMP" >> $env:GITHUB_ENV
+          "TMP=$env:RUNNER_TEMP" >> $env:GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           lfs: false

@@ -27,6 +27,10 @@ lets both Python jobs finish independently. Python source, test assertions and
 deployment path validation are unchanged. This is a CI environment adjustment;
 the deployment helper still requires matching canonical paths. The failed run
 remains available, and subsequent Actions results are separate evidence.
+An intermediate workflow-only attempt used `runner.temp` at job scope, where
+GitHub does not expose the runner context; [that run](https://github.com/estasi/SolidworksMCP-Local/actions/runs/39137587786)
+failed validation before any jobs or tests ran. The final workflow sets these
+variables inside a PowerShell step using `RUNNER_TEMP` and `GITHUB_ENV`.
 
 ## Contents and provenance
 

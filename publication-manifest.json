@@ -70,8 +70,8 @@
     },
     {
       "path": ".github/workflows/queue-tests.yml",
-      "bytes": 1215,
-      "sha256": "cae732dbe79aa39c6e61d89d0abd19fa21dbcb8709b75de81953e20c4e41bc9c"
+      "bytes": 1333,
+      "sha256": "c8e66bc9949e27ea0ade1fc0e32989ecaf722c49d94ba21da6a2c290a15d07f8"
     },
     {
       "path": ".gitignore",
@@ -125,8 +125,8 @@
     },
     {
       "path": "docs/GITHUB_READINESS.md",
-      "bytes": 9529,
-      "sha256": "c8986c57547ffc9e4905d2e219d6359acee19ef23e5f8486861dfed1aec1f8f1"
+      "bytes": 9883,
+      "sha256": "eb4fd0dfe103bcb6f3337ad9ed53fcd0977b8b54d15b693c9cdbfd9eb124ba10"
     },
     {
       "path": "docs/NATIVE_DOCUMENT_TARGET_QUALIFICATION.md",
@@ -648,6 +648,18 @@
       "kind": "hosted_windows_canonical_temporary_directory_environment",
       "input_sha256": "4e2151ff155d0c254d0fe2218f9c5945af5446a68d86fa1e76765a6a6b9712d7",
       "output_sha256": "c8986c57547ffc9e4905d2e219d6359acee19ef23e5f8486861dfed1aec1f8f1"
+    },
+    {
+      "path": ".github/workflows/queue-tests.yml",
+      "kind": "runner_context_available_at_step_scope",
+      "input_sha256": "cae732dbe79aa39c6e61d89d0abd19fa21dbcb8709b75de81953e20c4e41bc9c",
+      "output_sha256": "c8e66bc9949e27ea0ade1fc0e32989ecaf722c49d94ba21da6a2c290a15d07f8"
+    },
+    {
+      "path": "docs/GITHUB_READINESS.md",
+      "kind": "runner_context_available_at_step_scope",
+      "input_sha256": "c8986c57547ffc9e4905d2e219d6359acee19ef23e5f8486861dfed1aec1f8f1",
+      "output_sha256": "eb4fd0dfe103bcb6f3337ad9ed53fcd0977b8b54d15b693c9cdbfd9eb124ba10"
     }
   ],
   "publication_target": {
@@ -702,9 +714,14 @@
       "tests": 17,
       "passed": 17
     },
-    "adjustment": "TEMP and TMP use runner.temp; matrix fail-fast disabled",
+    "adjustment": "PowerShell step writes TEMP and TMP from RUNNER_TEMP to GITHUB_ENV; matrix fail-fast disabled",
     "python_source_and_test_assertions_unchanged": true,
     "runtime_path_validation_unchanged": true,
-    "subsequent_hosted_result": "See GitHub Actions for the final publication commit"
+    "subsequent_hosted_result": "See GitHub Actions for the final publication commit",
+    "intermediate_workflow_validation_failure": {
+      "run": "https://github.com/estasi/SolidworksMCP-Local/actions/runs/39137587786",
+      "reason": "runner context unavailable in job.env; moved environment setup to a PowerShell step",
+      "tests_executed": 0
+    }
   }
 }
