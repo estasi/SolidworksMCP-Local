@@ -1,0 +1,108 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Virtual environments and packaging output
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Local editor and agent state
+.idea/
+.vscode/
+.claude/
+.codex/
+*.code-workspace
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+config.local.json
+*.local.json
+
+# Runtime state
+*.log
+*.pid
+logs/
+checkpoints/
+*.sqlite
+*.sqlite3
+*.sqlite*
+*.db
+*.db-*
+endpoint.json
+activation.json
+recovery-bundles/
+runtime/
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+*.step
+*.stp
+*.x_t
+*.x_b
+
+# Generated test and acceptance artifacts
+tmp/
+temp/
+artifacts/
+outputs/
+reports/
+screenshots/
+tests/manual_*.py
+tests/*_probe.py
+/*_probe.*
+/*_acceptance.*
+/*_checkpoint.*
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+
+# Generic temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+*.swp
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Private operational evidence and publication staging
+/evidence/
+/publication-review*/
+*.dmp
+*.sldprt
+*.sldasm
+*.slddrw
+*.iges
+*.igs
+*.stl
+*.3mf
+*.dxf
+*.dwg
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Optional checkpoints are excluded until provenance and redistribution are cleared
+/solidworks_mcp/models/lineart/*.pt

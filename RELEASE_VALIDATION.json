@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "build": "2026.10.18.6",
+  "accepted_on": "2026-10-18",
+  "source_commit": "d0aa04ec84a501b7a2384bd734300bc615157960",
+  "runtime_manifest_sha256": "be333cc44d85c8d47f9e1c161e635fe15435b42f05d1bfd83a12961e051b0931",
+  "status": "passed",
+  "scope": "One existing SOLIDWORKS 2025 process; saved, already-open synthetic part targets",
+  "platform": {
+    "solidworks": "2025",
+    "api_revision": "33.2.0",
+    "python": "3.14",
+    "os": "Windows"
+  },
+  "native": {
+    "real_stdio_clients": 2,
+    "exact_build_handshakes": true,
+    "synthetic_saved_parts": 2,
+    "alternating_operations": 6,
+    "operations_per_part": 3,
+    "whole_operation_fifo_and_no_overlap": true,
+    "concurrent_queue_wait_observed": true,
+    "no_lost_increments": true,
+    "ordinary_targeted_cad_plans": 2,
+    "ordinary_plan_scope": "body_volume invariant plus normal save; same broker lease",
+    "geometry_per_part": {
+      "body_count": 1,
+      "initial_depth_mm": 20,
+      "final_depth_mm": 23,
+      "final_bounds_mm": [
+        20,
+        20,
+        23
+      ],
+      "final_volume_mm3": 9200,
+      "saved_closed_reopened_and_remeasured": true
+    },
+    "total_qualification_jobs": 31,
+    "checks_passed": 17,
+    "initial_open_document_count": 0,
+    "final_open_document_count": 0,
+    "only_owned_test_parts_created_and_closed": true,
+    "same_cad_and_broker_generations": true
+  },
+  "offline": {
+    "full_suite": {
+      "collected": 525,
+      "passed": 524,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0
+    },
+    "separate_broker_suite": {
+      "collected": 9,
+      "passed": 9,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0
+    },
+    "skip_reason": "Existing Windows-job capability limitation",
+    "native_entry_attempts": 0,
+    "source_hashes_unchanged": true
+  },
+  "upgrade": {
+    "checks_passed": 18,
+    "checks_total": 18,
+    "prior_jobs_preserved": 115,
+    "prior_events_preserved": 464,
+    "same_physical_journal": true,
+    "sqlite_integrity": true,
+    "queue_idle_open": true,
+    "queued_running_recovery_jobs": 0
+  },
+  "retained_history": {
+    "build5_native": "Failed switching before activation; a later already-admitted same-model job completed; .5 is not accepted for native two-model targeting",
+    "build5_full_suite": "501 passed, 1 skipped, 1 Windows temporary-directory cleanup error after image assertions; root cause unresolved",
+    "interpretation": "These retained .5 incidents are not current .6 failures. The passing .6 run does not retroactively clear or explain them.",
+    "build6_pre_restart_connection": "The prior current-chat probe returned Transport closed. Its evidence remains unchanged; a separate post-restart verification passed."
+  },
+  "limitations": [
+    "Operations in one SW process run sequentially, even when chats submit concurrently",
+    "Two-SW-instance scheduling and RAM/commit admission management are not implemented or qualified",
+    "Native target switching for assemblies and drawings is not qualified",
+    "Native activation fault injection, crash recovery and low-memory stress were not performed in this run",
+    "Initial and final sessions had no working documents; this run does not prove preservation with existing working models loaded",
+    "Manual UI, macros and other COM clients do not obey the MCP queue lock"
+  ],
+  "evidence_sha256": {
+    "native_acceptance": "8486ae0fc54c69ad0f645d75a983e2ceb967ff60d510b5a39f909c1bfe15ad35",
+    "upgrade_verification": "4c911a007a45a7fc84698562cf789bd03d37bd9f4acfeaa9f0edfb0965382fef",
+    "offline_full": "f33967ea9f8fff5742d5af0bc7a6898f4486e172f6e788fb6269ba1ad80e479f",
+    "offline_broker": "eb775136099dbc7f4d0548b6c57bb5bc2c15edc19c065b95d822dacc2521d94a",
+    "current_chat_connection_check": "56ba16cefee22bf75b9b5f36e43100f0f6883ad77e9556c5cefb9c1997434cb7",
+    "current_chat_reconnect_acceptance": "a37447ba30f62534c4940400b6d825c9700bc9e0c5872f56c1944b7b56f52260"
+  },
+  "redaction": "Only approved aggregate facts and evidence digests; no raw logs, workstation paths, process/owner identifiers, document identities or CAD payloads",
+  "client_connection": {
+    "two_fresh_real_stdio_clients_to_build6": "passed",
+    "existing_codex_chat_to_build6": "passed_after_client_application_restart",
+    "verified_on": "2026-10-18",
+    "verification": "Actual tools from the restarted existing chat connected to SW2025, reported MCP 2026.10.18.6 and confirmed an open, idle queue without recovery jobs",
+    "build6_client_application_restart_or_reconnect_qualified": true,
+    "scope": "One observed Codex application restart on the qualified Windows workstation",
+    "solidworks_restart_required": false,
+    "historical_pre_restart_probe": "Transport closed from cached previous connection; original failed probe retained"
+  }
+}

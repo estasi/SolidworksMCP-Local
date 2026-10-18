@@ -1,0 +1,675 @@
+{
+  "schema_version": 4,
+  "build": "2026.10.18.6",
+  "source_commit": "d0aa04ec84a501b7a2384bd734300bc615157960",
+  "snapshot_kind": "accepted runtime source with post-acceptance public documentation",
+  "runtime_manifest_sha256": "be333cc44d85c8d47f9e1c161e635fe15435b42f05d1bfd83a12961e051b0931",
+  "native_acceptance": "passed",
+  "validation": {
+    "markdown": "RELEASE_VALIDATION.md",
+    "json": "RELEASE_VALIDATION.json"
+  },
+  "source_allowlist_file_count": 95,
+  "python_files_unchanged": 75,
+  "model_payloads_included": false,
+  "git_history_included": false,
+  "private_evidence_included": false,
+  "document_transforms": [
+    {
+      "path": "LICENSE",
+      "kind": "canonical_license_newlines",
+      "input_sha256": "5a144b3d1d10611c287d430ba7b53eb2fee8b7f8522ffb2157500f7fb94df82d",
+      "output_sha256": "8c598a32665c5be0cb096dd34e76c80bea74bfe8735140dd3faa2e7212ed78e4"
+    },
+    {
+      "path": "LOCAL_RELEASE.txt",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "ab58841186696cb23d6d3169cb59b2eeeef47a15f26edc73c190f019b5f01757",
+      "output_sha256": "208630c90429a4af59f7e66ca2852a26102a24914fdae3454dcf93c1dcaa7daa"
+    },
+    {
+      "path": "README.md",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "55a5ec50a9730b38d3589d0802a7beceec0fdc3f2adbf347b30d86879dc01c07",
+      "output_sha256": "badfa889ba599f1bfc066a3d8463b623ebfe07cfa2cfd3c99d7a4e0d89cbdc31"
+    },
+    {
+      "path": "docs/DOCUMENT_TARGET.md",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "6b8fdd9345c0516007b39b087677ce15fac5dc016887c597f6458693fec3928c",
+      "output_sha256": "264c23d2bc5e5e432e903eddccd934039eddacefa1bcc07074f79af9423eb787"
+    },
+    {
+      "path": "docs/GITHUB_READINESS.md",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "6b4642341c586c1d202de0f84f22d33798d32f4eaa0ef401407edc9d0239c018",
+      "output_sha256": "727558b8dc286c355ce668a217cfaddf23d90293c1f25bb42a16e3c7b55241aa"
+    },
+    {
+      "path": "docs/QUEUE_RELEASE_NOTES.md",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "7125b5db31884b47df9a4445281c113dec3da97eaadd7f3b1841af3196ddacb1",
+      "output_sha256": "e65fd7e64937d9afecc1867a75e0894fecc2e7a02992ce7eff7dd9d0dd38f2aa"
+    },
+    {
+      "path": "docs/QUEUE_VALIDATION.md",
+      "kind": "post_acceptance_documentation_only",
+      "input_sha256": "f80ad4292c90537662f3bbc2aaebb8aa7f25cd441e20bd9a3cd354444402b43c",
+      "output_sha256": "907e4f30f5cddfbb959ce820e062d29fd082c0083ba71afe7aea6b54eb9ea5de"
+    }
+  ],
+  "added_sanitized_documents": [
+    "RELEASE_VALIDATION.md",
+    "RELEASE_VALIDATION.json"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 209,
+      "sha256": "a22bdcb38a49c60dad6e4948cacffc14c32e333eb767b4843b204fdd0a8ad010"
+    },
+    {
+      "path": ".github/workflows/queue-tests.yml",
+      "bytes": 959,
+      "sha256": "8ff132286d7d679ff1266a50bbc3ba9c9f18c3ea6400a999614a29ff81eb5104"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1288,
+      "sha256": "f8f19a96fa0ad7322e2e7a11fa989e32ac62ed3969b6b4ae5a208bdf9cbb96e0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "8c598a32665c5be0cb096dd34e76c80bea74bfe8735140dd3faa2e7212ed78e4"
+    },
+    {
+      "path": "LOCAL_RELEASE.txt",
+      "bytes": 10859,
+      "sha256": "ba94e948d732bdca450fab3c7ddd2eec5bbbe257fbdb729ee96b06f13b1f75f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14353,
+      "sha256": "53c403210585200b9edfe8406dfc4716707743f826589cb2334b8de3e86e05d3"
+    },
+    {
+      "path": "RELEASE_VALIDATION.json",
+      "bytes": 4833,
+      "sha256": "d0160c9e6d6fba567b0bb83a7683c86643e405dcf2062993d1874c2353d51f48"
+    },
+    {
+      "path": "RELEASE_VALIDATION.md",
+      "bytes": 4445,
+      "sha256": "ccb27130a2bc69a7018ea7342606991173fd1d87caf2c519a406e53744d12ff1"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 14653,
+      "sha256": "8313611b2ac11e0f9728328759f12619a4b5de3e4fd5b4f19073e2313497bb44"
+    },
+    {
+      "path": "constraints-core-py314-win.txt",
+      "bytes": 565,
+      "sha256": "ee873f344ea1c777a614a5b6cd7e81172910c7af4fddd15082215daaa1c722fd"
+    },
+    {
+      "path": "constraints-testextras-py314-win.txt",
+      "bytes": 745,
+      "sha256": "fb6b88b33c4b6ba6e1cae99f06ab9e076cb255588b2faf61065930ee9a58d9b7"
+    },
+    {
+      "path": "docs/DOCUMENT_TARGET.md",
+      "bytes": 9813,
+      "sha256": "264c23d2bc5e5e432e903eddccd934039eddacefa1bcc07074f79af9423eb787"
+    },
+    {
+      "path": "docs/GITHUB_READINESS.md",
+      "bytes": 8613,
+      "sha256": "4e2151ff155d0c254d0fe2218f9c5945af5446a68d86fa1e76765a6a6b9712d7"
+    },
+    {
+      "path": "docs/NATIVE_DOCUMENT_TARGET_QUALIFICATION.md",
+      "bytes": 4594,
+      "sha256": "94f5ae5d1071f43c82874620705de3df356402f3af547c004541d4c5ca962e1f"
+    },
+    {
+      "path": "docs/QUEUE_OPERATIONS.md",
+      "bytes": 26844,
+      "sha256": "fd19d457187832463f4a81775fdc7f3c75c4ca23459a135d5274e1007581112c"
+    },
+    {
+      "path": "docs/QUEUE_RELEASE_NOTES.md",
+      "bytes": 14369,
+      "sha256": "ee5a710af0c1dd6f5ae592aece07aa354660bcd213a7f3e410519956c314b6a6"
+    },
+    {
+      "path": "docs/QUEUE_VALIDATION.md",
+      "bytes": 23207,
+      "sha256": "3ae526d438af9ee2588e41df3e6a93044f3da13d7a0a7851067a0ee2aa762c4d"
+    },
+    {
+      "path": "requirements-queue.txt",
+      "bytes": 328,
+      "sha256": "154495942b15479239d9fb6bdbd598ca0c2eb75a713154c7997a2082da6444b1"
+    },
+    {
+      "path": "requirements-testextras.txt",
+      "bytes": 96,
+      "sha256": "d6894557db66456bedbf8b924933685373a77dd17a073800d3cea6a1add0ca6a"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 755,
+      "sha256": "5cba7158fba85613f7c31b78064924cb072934a3cb1b950864ddec6f21d508d2"
+    },
+    {
+      "path": "scripts/prepare_queue_release.py",
+      "bytes": 7486,
+      "sha256": "e02f54d62f878e5d247b5a1affb99bd03bf71743fdef9b275ca53e19fd91ff14"
+    },
+    {
+      "path": "scripts/qualify_native_document_targets.py",
+      "bytes": 37780,
+      "sha256": "25e16c39e4aefb125da3c2297cb38fcbe9d83fc0edbb2ce819674aaae489bf36"
+    },
+    {
+      "path": "scripts/qualify_native_queue.py",
+      "bytes": 28243,
+      "sha256": "c8d1c672674a761d789f2d9c8ced904a732cfc4a0e710aa75d4b51dc314dd260"
+    },
+    {
+      "path": "scripts/switch_mcp_config.py",
+      "bytes": 18399,
+      "sha256": "019bda96c6ff4c5b3fc85cae4913cda7244c0d97968950365da4339a6b5cd033"
+    },
+    {
+      "path": "solidworks_mcp/__init__.py",
+      "bytes": 1529,
+      "sha256": "28db9d15af573a4538d66d8c8aecb3826f64c3dea1e40f5fe4af2bb9bb08aeab"
+    },
+    {
+      "path": "solidworks_mcp/automation/__init__.py",
+      "bytes": 2528,
+      "sha256": "25ea6686310872e248da37b605465539209b496b49b45e1c5df4eb94a2a75aac"
+    },
+    {
+      "path": "solidworks_mcp/automation/advanced_features.py",
+      "bytes": 55331,
+      "sha256": "9212bb25a8f8421eaba81d21c53f3060d992cf0a7642658134857373c57b935e"
+    },
+    {
+      "path": "solidworks_mcp/automation/base.py",
+      "bytes": 16467,
+      "sha256": "c46169e2567a627f1efa39ecdbf581080ea69deefce3b7a0ed0a285463059945"
+    },
+    {
+      "path": "solidworks_mcp/automation/bodies.py",
+      "bytes": 28016,
+      "sha256": "81a90dbc3558fa266b93237a6c6578a4239ab6514ba0d0ca6d34b6104f800908"
+    },
+    {
+      "path": "solidworks_mcp/automation/com_utils.py",
+      "bytes": 31848,
+      "sha256": "59126ad102d7e3275bbd8aba196c42a112208c0139ec2d5b6d17f32e57984581"
+    },
+    {
+      "path": "solidworks_mcp/automation/deep_vectorization.py",
+      "bytes": 29717,
+      "sha256": "86a610204901b7d4ed07aad39f238af6e2ce0163ff30df90523b1c3204393a45"
+    },
+    {
+      "path": "solidworks_mcp/automation/documents.py",
+      "bytes": 31649,
+      "sha256": "3258a2a7a5fce02dc48a8146cf0d2fb3ead49b203ebc6cf6473a30cf6c30f761"
+    },
+    {
+      "path": "solidworks_mcp/automation/features.py",
+      "bytes": 23182,
+      "sha256": "66555962af5d299c900564fea8dd73c93ae4688faaf6704f70e6e0fc87673f94"
+    },
+    {
+      "path": "solidworks_mcp/automation/geometry_probe.py",
+      "bytes": 33151,
+      "sha256": "792e790e52ebcaaea8eca80dac636b6361fad6f494197eb342dabb7eac29dd3c"
+    },
+    {
+      "path": "solidworks_mcp/automation/high_level.py",
+      "bytes": 114976,
+      "sha256": "1d5b066e860fa74d8bf1303e8e21902441fbedac12d719288af0755b06384e01"
+    },
+    {
+      "path": "solidworks_mcp/automation/jobs.py",
+      "bytes": 25173,
+      "sha256": "b2fcc49580a97df3814a93c7948685fa924346b75956e346ffd2d0241fd3e47c"
+    },
+    {
+      "path": "solidworks_mcp/automation/lineart_vectorization.py",
+      "bytes": 29182,
+      "sha256": "24ac607eaba27d8a80349498b86898b4b1c8e9e5aa75f2be5239d88c5bb6dab1"
+    },
+    {
+      "path": "solidworks_mcp/automation/more_features.py",
+      "bytes": 39439,
+      "sha256": "2548182085fb3924f7ecb3a7b84829f84a6cb20523f5dbc1ea8cba9bcc54c5c8"
+    },
+    {
+      "path": "solidworks_mcp/automation/parametric.py",
+      "bytes": 150413,
+      "sha256": "1980c99a9b028c7e967a77e18a9c22ac8d4e853648341806bd3f5ae7da3b0ba6"
+    },
+    {
+      "path": "solidworks_mcp/automation/references.py",
+      "bytes": 10343,
+      "sha256": "d908c0e8872b135735e0e4ec9eb26f685de6879fdd21ecf543193b3b480409ac"
+    },
+    {
+      "path": "solidworks_mcp/automation/runtime.py",
+      "bytes": 14944,
+      "sha256": "b98a0229d994e7aa54402b4d5653e7788921669ffb72dde72fdb2f7303ccddf1"
+    },
+    {
+      "path": "solidworks_mcp/automation/sketches.py",
+      "bytes": 20632,
+      "sha256": "15d2810e086c1609572494320b4e15452a62d1909fe464c2fc7d2773710109f4"
+    },
+    {
+      "path": "solidworks_mcp/automation/transactions.py",
+      "bytes": 59642,
+      "sha256": "8fff13524041aa2e3600e0fe8bcf8d970045d2887cc57903511981c74547b025"
+    },
+    {
+      "path": "solidworks_mcp/automation/ui_watchdog_worker.py",
+      "bytes": 6888,
+      "sha256": "78592e809178534a83f6c09eea99bc94f2bb24f5e55abb75285ee2d74d6c7540"
+    },
+    {
+      "path": "solidworks_mcp/automation/vectorization.py",
+      "bytes": 184809,
+      "sha256": "3c3d7a0d21a2c3f3dbd51267568126ba33e85764b97fbb0248a148aa30eb1a4c"
+    },
+    {
+      "path": "solidworks_mcp/automation/view.py",
+      "bytes": 75777,
+      "sha256": "50555dd23478bab9a4ac64f0512b84a1d5ec69e65c88f60a8d530d8de9d43cb0"
+    },
+    {
+      "path": "solidworks_mcp/config.json",
+      "bytes": 709,
+      "sha256": "91bce8ac0eb795c2fd7e91852eefbea67ade54ec7cf49ad136758459865554cb"
+    },
+    {
+      "path": "solidworks_mcp/config.py",
+      "bytes": 6486,
+      "sha256": "2d41b7223852b70723ca3a14425e5716e89507f1dff2f5dd80cea8b91a6c1c63"
+    },
+    {
+      "path": "solidworks_mcp/constants.py",
+      "bytes": 9185,
+      "sha256": "9e7fd635dab5202dd878f96cbf723f628cb07d1616816c3526455c745c122955"
+    },
+    {
+      "path": "solidworks_mcp/coordination/__init__.py",
+      "bytes": 168,
+      "sha256": "307afd936e519451f670410618538bf20456ce5e58f986477d16cc1b11cf0e42"
+    },
+    {
+      "path": "solidworks_mcp/coordination/broker.py",
+      "bytes": 19792,
+      "sha256": "754a7f84646541af4acb682493f55675bd6a20948fac09da05642812e8f4006a"
+    },
+    {
+      "path": "solidworks_mcp/coordination/cad_backend.py",
+      "bytes": 22501,
+      "sha256": "fd7ae503f8c419006a0570474ba4556ba7b08e98553d01f725baaeb482f94d1b"
+    },
+    {
+      "path": "solidworks_mcp/coordination/cli.py",
+      "bytes": 3789,
+      "sha256": "f210f5d73e88754db9c603faa7fdc0b7c8afc9cf2e3d0b056c2f028d9f0f5556"
+    },
+    {
+      "path": "solidworks_mcp/coordination/client.py",
+      "bytes": 16395,
+      "sha256": "e3e488e41a6547bb493c08c8873763ce683f89b50302d8db63d6a8a59785d4ba"
+    },
+    {
+      "path": "solidworks_mcp/coordination/desktop_bootstrap.py",
+      "bytes": 2331,
+      "sha256": "f480fda7b8764171cbbb38583c164fb22f8ef149fc151a345c1a7fa5fd758bb9"
+    },
+    {
+      "path": "solidworks_mcp/coordination/desktop_launch.py",
+      "bytes": 9221,
+      "sha256": "85b1f8c3bce7064c0dddd59d0f5457687067871054ff6fb42ebf73b24f2bb817"
+    },
+    {
+      "path": "solidworks_mcp/coordination/document_target.py",
+      "bytes": 11552,
+      "sha256": "35867c13bd43b73fedeb9c4f0ca9c868464ffd371410523c20ec92c51467b29c"
+    },
+    {
+      "path": "solidworks_mcp/coordination/journal.py",
+      "bytes": 22737,
+      "sha256": "9081696cc90558504ba86cabfc770153254f5c64a28936e9ab0abcca9d14dee7"
+    },
+    {
+      "path": "solidworks_mcp/coordination/launch.py",
+      "bytes": 3751,
+      "sha256": "8b05eb3944d9fb2a67cf298e8295e74e8b7aa899b10699aedcf4933c608eb230"
+    },
+    {
+      "path": "solidworks_mcp/coordination/native_watchdog.py",
+      "bytes": 8763,
+      "sha256": "f78736ff8c3dc4f52f2c7d0a948066308516c15c8025b5b8545660f1c79946f0"
+    },
+    {
+      "path": "solidworks_mcp/coordination/ownership.py",
+      "bytes": 10582,
+      "sha256": "a2bbd8343af6695da602751e913b0a415f577767db9e764bd26edde11fecc0ff"
+    },
+    {
+      "path": "solidworks_mcp/coordination/platform_guard.py",
+      "bytes": 12308,
+      "sha256": "6e99a9c857c3809b69cf7df60cd3d6baba34035e0f57510a5515013e3b48eb5d"
+    },
+    {
+      "path": "solidworks_mcp/coordination/process_scan.py",
+      "bytes": 8125,
+      "sha256": "a5793b5f3b40bc8478acb269825612739ddc5a59a46ee4453b40494fb218d173"
+    },
+    {
+      "path": "solidworks_mcp/coordination/protocol.py",
+      "bytes": 2645,
+      "sha256": "1d8fb49be59e7c02fa4cdd4b4212f0e45edcae4312fdf53ec553886a22f7fdea"
+    },
+    {
+      "path": "solidworks_mcp/coordination/queue_tools.py",
+      "bytes": 5476,
+      "sha256": "e24f1fde94b69cf0c997ce13f628cdb7389c40deafa7bc15b0488783b5202051"
+    },
+    {
+      "path": "solidworks_mcp/coordination/test_backend.py",
+      "bytes": 2480,
+      "sha256": "fc65b94a8ec7c0a4b16f057f5800648adc5451ca05ddabffd02101d3943c8eb8"
+    },
+    {
+      "path": "solidworks_mcp/models/lineart/LICENSES.md",
+      "bytes": 3942,
+      "sha256": "7fcca592c168c2df671769de5f07fbd5730794a20d6b886590beb8e303936c9d"
+    },
+    {
+      "path": "solidworks_mcp/server.py",
+      "bytes": 133877,
+      "sha256": "ba2334181f1f92d2ef052fd6df35419036f9ba47103e42170ea263a922806207"
+    },
+    {
+      "path": "solidworks_mcp/tool_registry.py",
+      "bytes": 31099,
+      "sha256": "ec4bd36c286442c483b0029c46ccb98faa2110eac98c3b6d9c68d722949677ef"
+    },
+    {
+      "path": "solidworks_mcp/utils/__init__.py",
+      "bytes": 662,
+      "sha256": "4b8d8517d2355b6ade9bbf44308d39532727b8ff0c767d5e9ea485f09f77d95b"
+    },
+    {
+      "path": "solidworks_mcp/utils/sw_finder.py",
+      "bytes": 10085,
+      "sha256": "1841c83c472fffe323c774bcb7da04622323f21066b224d69cc4455f9701e8e5"
+    },
+    {
+      "path": "solidworks_mcp/utils/units.py",
+      "bytes": 6436,
+      "sha256": "c9ccefe32475515d9e0bd3d2c1f1e08bea8e95e1e8f99bfa6ce0e41323954a1a"
+    },
+    {
+      "path": "solidworks_mcp/vector_worker.py",
+      "bytes": 3104,
+      "sha256": "844ce090d2fab26a195899675d689ebf11e84716b88b9e73b2824fb125eb47fb"
+    },
+    {
+      "path": "solidworks_mcp_server.py",
+      "bytes": 799,
+      "sha256": "7ea21e098395f1e50675eb9393d3fc96ccbec8df1aba950e29fef623fbffe567"
+    },
+    {
+      "path": "tests/qualify_desktop_launch.py",
+      "bytes": 5027,
+      "sha256": "f5cb6a26b83e7159b927b8d1a909a3ec3202cba4e1a65e887b8c8fa5e88e761a"
+    },
+    {
+      "path": "tests/qualify_process_inventory.py",
+      "bytes": 6180,
+      "sha256": "0c707fc49fd54516674b170620601423994f1e1e4107f6d7abfc36395d0a413f"
+    },
+    {
+      "path": "tests/queue_detach_helper.py",
+      "bytes": 1471,
+      "sha256": "3306c5c6df6f1c619c538d76ab8ea945ef87770e577850260e14de347bcc5362"
+    },
+    {
+      "path": "tests/test_document_identity.py",
+      "bytes": 7959,
+      "sha256": "6fc820dac2afe17683d694318bac6a8d1c2b75da9ed0e99db57acc29dd321dd1"
+    },
+    {
+      "path": "tests/test_feature_reliability.py",
+      "bytes": 3927,
+      "sha256": "91975f1db0c2c06b957f88cffbe3076ad7486993f4fd7f1ebd24e53ee38ac713"
+    },
+    {
+      "path": "tests/test_native_document_targets.py",
+      "bytes": 22951,
+      "sha256": "273d9fef35e45f804debfa59f6df88c725e04977b69bcbe8c318dc0bc6c886b5"
+    },
+    {
+      "path": "tests/test_native_qualification.py",
+      "bytes": 12916,
+      "sha256": "e93a108b188e64e5d7bc6fd8027f9e264c16a701459e409eea15a6f5a418039d"
+    },
+    {
+      "path": "tests/test_queue_broker.py",
+      "bytes": 14907,
+      "sha256": "660aaffa6151bf1d149e135939e2f2982fd0740b4b9336dfd223a6e472d950ce"
+    },
+    {
+      "path": "tests/test_queue_deployment.py",
+      "bytes": 19564,
+      "sha256": "a2c607297fbcaa3e08c21576367dff5bc6c48830663ec8723906bbeafde2880c"
+    },
+    {
+      "path": "tests/test_queue_desktop_launch.py",
+      "bytes": 5645,
+      "sha256": "a6511a58f0ae5a76b4e8f5da1ba477fdf6de73141edf025f3df8ef8e614647d7"
+    },
+    {
+      "path": "tests/test_queue_detach.py",
+      "bytes": 12084,
+      "sha256": "12bbcb2797b1b47425bb23475c130e06dda9484a5a64ea5ae106b3098ed2beea"
+    },
+    {
+      "path": "tests/test_queue_document_target.py",
+      "bytes": 33387,
+      "sha256": "defdf32e1d301369da3db5c13e1fae8d6d096131a4b8575db1e5bcfc5990fae6"
+    },
+    {
+      "path": "tests/test_queue_journal.py",
+      "bytes": 14844,
+      "sha256": "bfd4cdc87096595d3d4ae17a785c24bdb09cccb2f316fad719361f72e3af1d0e"
+    },
+    {
+      "path": "tests/test_queue_owner_pin.py",
+      "bytes": 9023,
+      "sha256": "1ae4587e9437c308b4005412d33194bd41202bf3742dc3f8aa1b7d5093232b28"
+    },
+    {
+      "path": "tests/test_queue_platform.py",
+      "bytes": 10237,
+      "sha256": "ad96cb13f04fd0cc9321fc1f5d0d09f9c35f153cf269d3b97351fe6ccc8202aa"
+    },
+    {
+      "path": "tests/test_queue_process_scan.py",
+      "bytes": 17730,
+      "sha256": "6ddcb4bf79b816001aa7d8e955803b2a88c910f4fc91b9920564cb458db07f16"
+    },
+    {
+      "path": "tests/test_queue_recovery.py",
+      "bytes": 5627,
+      "sha256": "84262f24ddbc77e08f577aa8d384846a6eac53c554ee6148074866b62e43158b"
+    },
+    {
+      "path": "tests/test_queue_routing.py",
+      "bytes": 21282,
+      "sha256": "84dd2c231f9e6e4d7d25a6f85bbaca524a6673e5e9a2abfe432abdb6ccbf6bbf"
+    },
+    {
+      "path": "tests/test_sketch_reliability.py",
+      "bytes": 17205,
+      "sha256": "1b79c9c9483e37d1abc23bbfbedb9edb1395b27e5374257567491d492ec457e4"
+    },
+    {
+      "path": "tests/test_strict_document_inventory.py",
+      "bytes": 4341,
+      "sha256": "8a1bf8324107fb8d3f5cbb576897763b64c1fa48e84c04921e5e326a98bdd0d1"
+    },
+    {
+      "path": "tests/test_transaction_reliability.py",
+      "bytes": 28232,
+      "sha256": "fc96d3d3821fee510d21add22897d3423c5a3bdb924db2f20249c80af10f38c5"
+    },
+    {
+      "path": "tests/test_v6.py",
+      "bytes": 208302,
+      "sha256": "73499ca970bd03bda826efcdc2065e23501da63e4db7896e0a928130d19a5a0d"
+    },
+    {
+      "path": "tests/test_view_reliability.py",
+      "bytes": 9618,
+      "sha256": "d2c1edd19b5d860add76678e8b0721d3480d4641e1fae85a984e0c1a7714824f"
+    }
+  ],
+  "client_reconnect_acceptance": "passed_for_existing_codex_chat_after_application_restart",
+  "publication_revision": "github-source-only-no-lfs",
+  "predecessor_publication": {
+    "zip_sha256": "bbde6e02e32a300d3f3a8b46340fd672b4e5582ef3f5e34387d8a4595e123c8c",
+    "zip_bytes": 535731,
+    "manifest_sha256": "643fa1a5fa8d6cc5fe695582527283c7660c61d9cdc45cc611b86d598553f13b",
+    "retained_unchanged": true
+  },
+  "client_reconnect_evidence_sha256": "a37447ba30f62534c4940400b6d825c9700bc9e0c5872f56c1944b7b56f52260",
+  "publication_revision_transforms": [
+    {
+      "path": "README.md",
+      "kind": "reconnect_acceptance_documentation_only",
+      "input_sha256": "82d41bd9010c3838f775caa8abd1f5537993545b6326f31b7cee1e4ba4cc7c54",
+      "output_sha256": "badfa889ba599f1bfc066a3d8463b623ebfe07cfa2cfd3c99d7a4e0d89cbdc31"
+    },
+    {
+      "path": "RELEASE_VALIDATION.json",
+      "kind": "reconnect_acceptance_documentation_only",
+      "input_sha256": "ef2f6ce77fa438447734ce9adf3bcdfa885e7e80e8199838573e20da27e335b0",
+      "output_sha256": "d0160c9e6d6fba567b0bb83a7683c86643e405dcf2062993d1874c2353d51f48"
+    },
+    {
+      "path": "RELEASE_VALIDATION.md",
+      "kind": "reconnect_acceptance_documentation_only",
+      "input_sha256": "ef74885afafaf22a7273a86c8f4c658cb64e20f277c43d5fbb482826fafc689b",
+      "output_sha256": "5983ee3804cafc2a860d87a818975f41f0880f3636b6f3d92253af9c38e4b04f"
+    },
+    {
+      "path": ".gitattributes",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "0fc28136a017de12b87b6181606701ac667419bebc75ecd813258a4aa1a3607d",
+      "output_sha256": "a22bdcb38a49c60dad6e4948cacffc14c32e333eb767b4843b204fdd0a8ad010"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "00fb8e166d9d96f573f1dd939ac1e06dde84f547984c4342b3b276994f9512b1",
+      "output_sha256": "f8f19a96fa0ad7322e2e7a11fa989e32ac62ed3969b6b4ae5a208bdf9cbb96e0"
+    },
+    {
+      "path": "LOCAL_RELEASE.txt",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "208630c90429a4af59f7e66ca2852a26102a24914fdae3454dcf93c1dcaa7daa",
+      "output_sha256": "ba94e948d732bdca450fab3c7ddd2eec5bbbe257fbdb729ee96b06f13b1f75f2"
+    },
+    {
+      "path": "README.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "badfa889ba599f1bfc066a3d8463b623ebfe07cfa2cfd3c99d7a4e0d89cbdc31",
+      "output_sha256": "53c403210585200b9edfe8406dfc4716707743f826589cb2334b8de3e86e05d3"
+    },
+    {
+      "path": "RELEASE_VALIDATION.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "5983ee3804cafc2a860d87a818975f41f0880f3636b6f3d92253af9c38e4b04f",
+      "output_sha256": "ccb27130a2bc69a7018ea7342606991173fd1d87caf2c519a406e53744d12ff1"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "d866ea17c7d91a793367c5d562c91c2e10e3095544ec67e1ca0f4f40a8c7d16f",
+      "output_sha256": "8313611b2ac11e0f9728328759f12619a4b5de3e4fd5b4f19073e2313497bb44"
+    },
+    {
+      "path": "docs/GITHUB_READINESS.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "727558b8dc286c355ce668a217cfaddf23d90293c1f25bb42a16e3c7b55241aa",
+      "output_sha256": "4e2151ff155d0c254d0fe2218f9c5945af5446a68d86fa1e76765a6a6b9712d7"
+    },
+    {
+      "path": "docs/QUEUE_RELEASE_NOTES.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "e65fd7e64937d9afecc1867a75e0894fecc2e7a02992ce7eff7dd9d0dd38f2aa",
+      "output_sha256": "ee5a710af0c1dd6f5ae592aece07aa354660bcd213a7f3e410519956c314b6a6"
+    },
+    {
+      "path": "docs/QUEUE_VALIDATION.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "907e4f30f5cddfbb959ce820e062d29fd082c0083ba71afe7aea6b54eb9ea5de",
+      "output_sha256": "3ae526d438af9ee2588e41df3e6a93044f3da13d7a0a7851067a0ee2aa762c4d"
+    },
+    {
+      "path": "solidworks_mcp/models/lineart/LICENSES.md",
+      "kind": "github_publication_documentation_and_optional_asset_boundary",
+      "input_sha256": "d8f83b805fbf5291d733b784b1caa69c2737a70d77df5d832924cee1fca60c58",
+      "output_sha256": "7fcca592c168c2df671769de5f07fbd5730794a20d6b886590beb8e303936c9d"
+    }
+  ],
+  "publication_target": {
+    "repository": "estasi/SolidworksMCP-Local",
+    "url": "https://github.com/estasi/SolidworksMCP-Local",
+    "visibility": "public",
+    "release_tag": "v2026.10.18.6"
+  },
+  "predecessor_reconnect_publication": {
+    "manifest_sha256": "ef5f3c3333b434f954a46389038cbc8e84229f6712965b3ed05cc0f5b89a29c9",
+    "zip_sha256": "f87513d9e6fdad32cb7bbe3af65d60b9e2accaf560eb4f1cdcf03da1639453f1",
+    "zip_bytes": 536352,
+    "retained_unchanged": true
+  },
+  "baseline_source_allowlist_file_count": 97,
+  "publication_payload_file_count": 97,
+  "lfs_pointers_included": false,
+  "omitted_lfs_pointers": [
+    {
+      "original_path": "solidworks_mcp/models/lineart/dexined_biped_v2.pt",
+      "pointer_bytes": 134,
+      "pointer_sha256": "e4a75b207186d755ce16f31d488a68bbb4c5174801f6e325b53e8f3992507993",
+      "lfs_object_oid_sha256": "096c2230d3060104bae083a4b0c882ebc6301d730c401c7e8556a6d8f944c65b",
+      "expected_weight_bytes": 141291499,
+      "reason": "Exact converted model provenance and redistribution permission remain unresolved; neither pointer nor weight object is included in this GitHub source tree"
+    },
+    {
+      "original_path": "solidworks_mcp/models/lineart/teed_biped_5.pt",
+      "pointer_bytes": 131,
+      "pointer_sha256": "9b1159c5fb80543873f887e4423250e3fca7357e53ac874ad17c8a0475e88e7d",
+      "lfs_object_oid_sha256": "3175ec531b2238eaaacbcfac17111666f2b8c885bd04f785de36f8c776c80c3a",
+      "expected_weight_bytes": 296344,
+      "reason": "Exact converted model provenance and redistribution permission remain unresolved; neither pointer nor weight object is included in this GitHub source tree"
+    }
+  ],
+  "transform_record_scope": "Chronological historical input/output hashes are retained; the files list identifies the current publication bytes"
+}

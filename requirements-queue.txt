@@ -1,0 +1,7 @@
+# Tested queue/core runtime package versions (Windows). No CAD licence included.
+# For optional raster/vector functions also satisfy requirements.txt and supply
+# the documented model assets. This minimal set does not certify those backends.
+mcp==1.30.0
+python-dotenv==1.2.4
+pywin32==312; sys_platform == "win32"
+Pillow==12.3.0

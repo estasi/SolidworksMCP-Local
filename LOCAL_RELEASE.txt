@@ -1,0 +1,163 @@
+SolidworksMCP Local -- build 2026.10.18.6 -- NATIVE PART-TARGETING ACCEPTANCE PASSED
+Accepted on 2026-10-18 against unchanged runtime commit d0aa04ec84a501b7a2384bd734300bc615157960.
+SW2025 API33.2.0: two actual stdio clients, two disposable saved parts, six
+alternating whole operations, two ordinary targeted plans and save/reopen geometry.
+31 native jobs passed; final upgrade checks18/18 passed; full offline525 collected
+=524 passed+1 capability skip; separate broker9/9 passed.
+One SW process executes CAD operations sequentially. Assembly/drawing targeting,
+multiple SW instances and RAM admission management are not qualified.
+See RELEASE_VALIDATION.md, RELEASE_VALIDATION.json and publication-manifest.json.
+Original MIT attribution retained. Source-only GitHub distribution:
+https://github.com/estasi/SolidworksMCP-Local (tag v2026.10.18.6).
+Optional weight binaries and their LFS pointers are excluded; identities are
+retained in publication-manifest.json and the model license/provenance notes.
+
+HISTORICAL .5 SOURCE CANDIDATE -- native two-model qualification failed
+===============================================================================
+
+SolidworksMCP Local -- build 2026.10.18.5 -- NATIVE ACCEPTANCE IS A SEPARATE GATE
+Independent fork; not upstream 6.6.0. Source-only publication preparation.
+Adds opt-in coordination.target_document for already open saved models.
+Runtime source derives from .4 baseline 5862415ba43bc2586a764459ac9821eefb804f3d.
+Use the final release manifest to identify the exact .5 source; this file is not
+a native acceptance certificate. Qualification installation requires an idle
+authorized window. Production use requires the matching native PASS report.
+Only clean, saved current/target models with known safe edit states can switch.
+Whole CAD operations execute strictly sequentially; finish, verify and save at
+operation boundaries to allow another model to run. expected_document remains
+compare-only. Assembly/drawing targeting is not natively certified.
+Offline .5 selection tests: 47 PASS; owner-pin tests: 18 PASS.
+Final queue regression: 213 PASS, 1 SKIP (214 collected).
+See docs/DOCUMENT_TARGET.md and docs/QUEUE_VALIDATION.md.
+Original project: https://github.com/alisamsam/Solidworks-MCP
+Immediate upstream: https://github.com/czuryk/SolidworksMCP
+MIT copyright and original author attribution preserved.
+
+HISTORICAL .4 ACCEPTANCE -- not certification of the .5 selection path
+The same .4 broker and SolidWorks generations survived the client-app restart.
+Two-process native CAD, two MCP stdio clients and final cleanup passed.
+Full station regression: 423 PASS, 1 SKIP; broker: 9 PASS.
+Prior failures and limitations remain in docs/QUEUE_VALIDATION.md.
+Build .4 checks expected_document but does not automatically activate it.
+Publication includes source, tests and notices only; no local Git history,
+operational evidence, CAD models, environments or weight binaries.
+See README.md, THIRD_PARTY_NOTICES.md and docs/GITHUB_READINESS.md.
+
+HISTORICAL RECORD BELOW -- not current status or installation instructions
+===============================================================================
+
+SolidworksMCP Local -- build 2026.10.18.3 -- NATIVE ACCEPTANCE PENDING
+Independent local fork build; not an upstream release number.
+Replaces our provisional staged candidate label 6.6.0-queue.1.
+Date: 2026-10-18.
+Target: SOLIDWORKS 2025, API major revision 33.
+Build .3 native SW2025 and MCP transport qualification: pending at source preparation.
+Final activation and acceptance evidence is retained beside the installed release.
+Build .1 was activated in the authorized idle maintenance window. Its first
+native seed failed; the queue fenced further work and required explicit recovery.
+The disposable failed part and diagnostics were preserved. Build .2 corrected
+the qualification route and MCP handshake version, then passed the native
+two-process test: six increments, FIFO, no overlap, 20x20x26 mm, one solid,
+10400 mm3, and matching saved/reopened geometry. No user documents were open.
+Build .3 starts native brokers through the verified existing desktop Explorer,
+independently of MCP frontend lifetime. The process can retain an OS desktop job;
+the synthetic qualification verifies exclusion from the exact MCP frontend job
+and survival after that job is closed. Physical journal identity is pinned even
+under MSIX redirection; the journal is not copied or reset. Unverifiable desktop
+launch fails without an attached fallback. See docs/QUEUE_OPERATIONS.md.
+Existing legacy MCP clients block rollout; their CAD work must finish first.
+Queue baseline: 8338e62 (6.5.31-local.1 reliability branch).
+
+Queue changes
+- One process-shared FIFO journal and one STA CAD executor per Windows user and
+  desktop session. The ownership mutex is independent of release and state path.
+- The protected unit includes the whole submitted CAD plan, rebuild, supported
+  rollback, validation and save/export. Separate tool calls are separate units.
+- Durable request IDs and get_queue_request support result lookup after a lost
+  response without replaying a completed or uncertain mutation.
+- Timeouts and interrupted execution retain a recovery fence. They do not kill
+  CAD, release a still-active operation, or imply that an outstanding COM call
+  stopped. Recovery requires recorded return evidence or proof that the original
+  CAD process generation ended, followed by explicit operator acknowledgement.
+- Activation binds an explicit PID, process generation and expected major 33.
+  It refuses legacy clients or a live broker and never deletes the journal or
+  clears its recovery state. Status/polling do not read the model through COM.
+- Native state is canonical and private:
+  %LOCALAPPDATA%\SolidworksMCP\coordination\v1\<sessionhash>
+- Raw Python requires coordination.trusted_python=true. It must stay synchronous
+  within the operation and must not spawn work or independently rebind COM.
+  Static validation is not a sandbox. Prefer typed tools and CAD plans.
+- Automatic UI dialog resolution and automatic recovery are disabled.
+
+Delivery and validation boundaries
+- scripts/prepare_queue_release.py builds a new directory from clean committed
+  HEAD and writes a version/file-hash manifest. It does not activate or fetch LFS.
+- scripts/switch_mcp_config.py defaults to dry-run. Explicit --apply is guarded
+  by process inventory and the CAD lease, preserves foreign TOML bytes and file
+  permissions, and creates a unique private exact-block backup. Restore requires
+  the unchanged activated full-config hash; later user edits are not overwritten.
+- Local unit, journal, independent-process and synthetic deployment tests are
+  distinct from native CAD acceptance. See docs/QUEUE_OPERATIONS.md for the live
+  acceptance matrix, cutover, recovery and rollback commands.
+- Packaged line-art paths currently contain Git LFS pointers, not model blobs.
+  Full line-art/CUDA readiness and other SOLIDWORKS versions are not qualified by
+  queue tests or release preparation.
+- The inherited initial README blob was recovered in the isolated repository
+  from upstream after exact Git-object hash verification. Git integrity checks
+  and a bounded history/private-path scan pass. The original installation's Git
+  objects remain unchanged. Archives disable LFS smudging and retain pointers;
+  unavailable model weights are not downloaded implicitly.
+- MIT/upstream attribution is preserved. No public push or release is authorized
+  by this staging work. See docs/GITHUB_READINESS.md before publication review.
+
+Historical release notes follow. They describe the earlier local release and
+its separately recorded acceptance, not validation of 2026.10.18.3. References
+to sibling reports, installers and earlier live results are historical only.
+
+===============================================================================
+HISTORICAL: SolidWorks MCP 6.5.31-local.1
+Local reliability fixes for SOLIDWORKS 2025 SP2.0 (33.2.0), Russian templates.
+Base: 38468b32890a9fc4c4aeec50fa97f679496c4524 (6.5.31).
+
+Changes
+- Resolve standard planes by geometry and origin by its native feature.
+- Accept an already coincident endpoint only when native identity proves it.
+- Verify sketch entry/exit through typed COM; reacquire the owned sketch after
+  EditRebuild3 exits edit mode. Check ISketch identity when GetFeature is absent.
+- Use real graphics-window coordinates instead of stale FrameWidth/FrameHeight.
+- Check actual solver status, the fully-defined-sketch system setting and native
+  CheckFeatureUse before extrusion. Unknown solver/topology results fail.
+- Distinguish bounding-box containment from exact match, and reject unknown,
+  non-finite or inverted bounds.
+- Normalize native save results; a failed save prevents close/transaction commit.
+- Close by full path and verify the target disappeared and other documents remain.
+  Detect already-open paths and same-filename conflicts explicitly.
+- Transaction rollback verifies native dimensions, geometry and document identity.
+  Checkpoints never silently replace or overwrite the original document.
+  Keep source/open documents during retention. Reject rollback plans for states
+  the current snapshot cannot verify, including appearance/visibility changes.
+- Rollback plans with equation-bearing sketch creation or batch dimension edits
+  are rejected before mutation: live SW2025 sketch lifecycle calls invalidated
+  native grouped undo. Explicit leave_partial does not promise an automatic undo.
+
+Validation and installation
+The release directory above this checkout contains the live MCP acceptance
+drivers, machine-readable evidence, report.txt, and Activate.ps1/Rollback.ps1.
+Use report.txt for final acceptance status, measurements and known limitations.
+The original installation and its Python environment are preserved. Only the
+SolidWorks MCP block in Codex configuration is switched; rollback restores its
+saved original bytes while preserving unrelated settings.
+
+Documentation consulted
+SOLIDWORKS Sketch Status Conventions (Use fully defined sketches):
+https://help.solidworks.com/2025/english/solidworks/sldworks/c_Sketch_Status_Conventions.htm
+SOLIDWORKS FinishRecordingUndoObject2 (undoable operations and visible groups):
+https://help.solidworks.com/2022/english/api/sldworksapi/SOLIDWORKS.Interop.sldworks~SOLIDWORKS.Interop.sldworks.IModelDocExtension~FinishRecordingUndoObject2.html
+SOLIDWORKS full-path CloseDoc example:
+https://help.solidworks.com/2024/English/api/sldworksapi/Get_Names_of_Creators_of_Features_Example_CSharp.htm
+Codex MCP configuration (command, args, cwd):
+https://developers.openai.com/codex/mcp
+
+Live acceptance is bounded to the documented test parts and SOLIDWORKS version.
+It is not a claim that every MCP command, assembly/drawing workflow, or DPI setup
+has passed runtime qualification.
