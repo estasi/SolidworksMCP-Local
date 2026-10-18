@@ -13,6 +13,21 @@ content/privacy/license/link audit. Private native reports and runtime state are
 excluded. Historical `.5` native and test-cleanup failures remain retained; they
 are not represented as current `.6` failures or retroactively resolved.
 
+## Hosted Windows test environment
+
+The [first GitHub Actions run](https://github.com/estasi/SolidworksMCP-Local/actions/runs/39137260892)
+failed 12 synthetic config-switch checks with `UNEXPECTED_SOURCE`; its second
+Python job was cancelled by the matrix's original fail-fast policy. The same
+failure was reproduced with an 8.3 temporary-directory alias: the fixture wrote
+the alias into its synthetic TOML, while deployment validation resolved its
+expected path to the full name. The strict guard rejected that mismatch.
+
+The workflow now sets `TEMP` and `TMP` to GitHub's runner temporary directory and
+lets both Python jobs finish independently. Python source, test assertions and
+deployment path validation are unchanged. This is a CI environment adjustment;
+the deployment helper still requires matching canonical paths. The failed run
+remains available, and subsequent Actions results are separate evidence.
+
 ## Contents and provenance
 
 The source tree retains project source, tests, documentation, dependency

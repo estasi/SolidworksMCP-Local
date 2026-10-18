@@ -70,8 +70,8 @@
     },
     {
       "path": ".github/workflows/queue-tests.yml",
-      "bytes": 959,
-      "sha256": "8ff132286d7d679ff1266a50bbc3ba9c9f18c3ea6400a999614a29ff81eb5104"
+      "bytes": 1215,
+      "sha256": "cae732dbe79aa39c6e61d89d0abd19fa21dbcb8709b75de81953e20c4e41bc9c"
     },
     {
       "path": ".gitignore",
@@ -125,8 +125,8 @@
     },
     {
       "path": "docs/GITHUB_READINESS.md",
-      "bytes": 8613,
-      "sha256": "4e2151ff155d0c254d0fe2218f9c5945af5446a68d86fa1e76765a6a6b9712d7"
+      "bytes": 9529,
+      "sha256": "c8986c57547ffc9e4905d2e219d6359acee19ef23e5f8486861dfed1aec1f8f1"
     },
     {
       "path": "docs/NATIVE_DOCUMENT_TARGET_QUALIFICATION.md",
@@ -550,7 +550,7 @@
     }
   ],
   "client_reconnect_acceptance": "passed_for_existing_codex_chat_after_application_restart",
-  "publication_revision": "github-source-only-no-lfs",
+  "publication_revision": "github-source-only-no-lfs-canonical-ci-temp",
   "predecessor_publication": {
     "zip_sha256": "bbde6e02e32a300d3f3a8b46340fd672b4e5582ef3f5e34387d8a4595e123c8c",
     "zip_bytes": 535731,
@@ -636,6 +636,18 @@
       "kind": "github_publication_documentation_and_optional_asset_boundary",
       "input_sha256": "d8f83b805fbf5291d733b784b1caa69c2737a70d77df5d832924cee1fca60c58",
       "output_sha256": "7fcca592c168c2df671769de5f07fbd5730794a20d6b886590beb8e303936c9d"
+    },
+    {
+      "path": ".github/workflows/queue-tests.yml",
+      "kind": "hosted_windows_canonical_temporary_directory_environment",
+      "input_sha256": "8ff132286d7d679ff1266a50bbc3ba9c9f18c3ea6400a999614a29ff81eb5104",
+      "output_sha256": "cae732dbe79aa39c6e61d89d0abd19fa21dbcb8709b75de81953e20c4e41bc9c"
+    },
+    {
+      "path": "docs/GITHUB_READINESS.md",
+      "kind": "hosted_windows_canonical_temporary_directory_environment",
+      "input_sha256": "4e2151ff155d0c254d0fe2218f9c5945af5446a68d86fa1e76765a6a6b9712d7",
+      "output_sha256": "c8986c57547ffc9e4905d2e219d6359acee19ef23e5f8486861dfed1aec1f8f1"
     }
   ],
   "publication_target": {
@@ -671,5 +683,28 @@
       "reason": "Exact converted model provenance and redistribution permission remain unresolved; neither pointer nor weight object is included in this GitHub source tree"
     }
   ],
-  "transform_record_scope": "Chronological historical input/output hashes are retained; the files list identifies the current publication bytes"
+  "transform_record_scope": "Chronological historical input/output hashes are retained; the files list identifies the current publication bytes",
+  "hosted_ci_environment_adjustment": {
+    "initial_failed_run": "https://github.com/estasi/SolidworksMCP-Local/actions/runs/39137260892",
+    "initial_python314_result": {
+      "tests": 225,
+      "failures": 2,
+      "errors": 10,
+      "skipped": 1
+    },
+    "initial_python311_result": "cancelled_by_matrix_fail_fast",
+    "local_synthetic_alias_reproduction": {
+      "tests": 17,
+      "failures": 2,
+      "errors": 10
+    },
+    "local_canonical_temp_control": {
+      "tests": 17,
+      "passed": 17
+    },
+    "adjustment": "TEMP and TMP use runner.temp; matrix fail-fast disabled",
+    "python_source_and_test_assertions_unchanged": true,
+    "runtime_path_validation_unchanged": true,
+    "subsequent_hosted_result": "See GitHub Actions for the final publication commit"
+  }
 }
